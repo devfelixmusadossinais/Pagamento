@@ -1,0 +1,432 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EconoGym | Finalize Sua Ativação Segura</title>
+    <meta name="description" content="Você está a um passo de desbloquear o acesso a milhares de academias. Finalize sua ativação com segurança e comece a treinar com liberdade.">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <style>
+        /* Estilos com estética minimalista e premium (dark mode) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617; /* slate-950 */
+            color: #d1d5db; /* gray-300 */
+        }
+
+        /* Efeito de Aurora no fundo */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            background: radial-gradient(circle at 15% 20%, rgba(79, 70, 229, 0.2) 0%, transparent 40%),
+                        radial-gradient(circle at 85% 75%, rgba(22, 163, 74, 0.15) 0%, transparent 40%);
+            animation: moveAurora 20s ease-out infinite alternate;
+            filter: blur(100px);
+        }
+
+        @keyframes moveAurora {
+            from { transform: translate(0%, 0%) rotate(0deg) scale(1.2); }
+            to { transform: translate(10%, -10%) rotate(15deg) scale(1.5); }
+        }
+
+        .gradient-text {
+            background: linear-gradient(60deg, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.4);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+        }
+        .plan-card {
+            background-color: rgba(15, 23, 42, 0.5); /* slate-900 com 50% de opacidade */
+            border: 1px solid #1e293b; /* slate-800 */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: all 0.3s ease;
+        }
+        .plan-card:hover {
+            transform: translateY(-8px);
+            border-color: #4f46e5; /* indigo-600 */
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        /* Botão flutuante mobile */
+        .mobile-cta {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .mobile-cta {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- SEÇÃO HERO (FOCO NA CONFIRMAÇÃO) -->
+    <header class="py-20 sm:py-28">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6">
+                Você está a um passo da sua <span class="gradient-text">liberdade fitness</span>.
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+                Finalize sua ativação de forma rápida e segura. Milhares de academias te esperam.
+            </p>
+            
+            <!-- Urgência no Hero -->
+            <div class="mb-8 bg-red-500/10 border border-red-500/30 rounded-lg p-3 max-w-md mx-auto">
+                <p class="text-red-300 text-sm text-center">
+                    <i class="fa-solid fa-clock mr-2"></i>
+                    <strong>Oferta limitada</strong> - válida apenas este mês
+                </p>
+            </div>
+            
+            <a href="#acessos" class="cta-button inline-block bg-indigo-600 text-white font-bold text-lg px-8 py-4 rounded-lg">
+                <i class="fa-solid fa-shield-halved mr-2"></i>
+                Escolher Meu Acesso
+            </a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO "O QUE ACONTECE AGORA" (PROCESSO SIMPLES) -->
+    <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">O que acontece agora?</h2>
+                <p class="text-lg text-slate-400 max-w-3xl mx-auto">Um processo de 3 passos simples para você começar a treinar hoje mesmo.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="fade-in border-t-2 border-indigo-500 pt-8 visible">
+                    <div class="mx-auto text-indigo-400 text-4xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold text-white my-4">Escolha o Acesso Ideal</h3>
+                    <p class="text-slate-400">Selecione o acesso individual ou família e clique para iniciar o pagamento seguro.</p>
+                </div>
+                <div class="fade-in border-t-2 border-indigo-500 pt-8 visible" style="transition-delay: 150ms;">
+                    <div class="mx-auto text-indigo-400 text-4xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-bold text-white my-4">Pagamento Seguro PIX</h3>
+                    <p class="text-slate-400">Você será direcionado ao nosso checkout criptografado, parceiro da TrivexPay.</p>
+                </div>
+                <div class="fade-in border-t-2 border-indigo-500 pt-8 visible" style="transition-delay: 300ms;">
+                    <div class="mx-auto text-indigo-400 text-4xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold text-white my-4">Ativação Imediata</h3>
+                    <p class="text-slate-400">Após o PIX, nossa equipe te guia via WhatsApp para ativar seu acesso em minutos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ACESSOS (FOCO PRINCIPAL) -->
+    <section id="acessos" class="py-16 sm:py-24">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Selecione Seu Acesso</h2>
+                <p class="text-lg text-slate-400 max-w-3xl mx-auto">Um investimento único para um ano inteiro de acesso e tranquilidade.</p>
+            </div>
+
+            <!-- Indicador de Urgência Social -->
+            <div class="bg-orange-500/10 border border-orange-500/30 rounded-lg p-4 mb-8 text-center">
+                <p class="text-orange-300 font-semibold">
+                    <i class="fa-solid fa-fire mr-2"></i>
+                    <strong>127 ativações</strong> realizadas nas últimas 24 horas
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Acesso Família -->
+                <div class="plan-card relative p-8 pt-20 rounded-2xl border-2 border-indigo-500 shadow-2xl shadow-indigo-500/10">
+                    <!-- Badge Centralizado -->
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                        <span class="whitespace-nowrap bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold px-6 py-2 rounded-full uppercase shadow-lg">
+                            <i class="fa-solid fa-trophy mr-1"></i>
+                            Escolha de 73% dos clientes
+                        </span>
+                    </div>
+
+                    <!-- Selo de Segurança -->
+                    <div class="flex justify-center mb-4">
+                        <span class="bg-green-500/10 text-green-300 text-xs px-3 py-1 rounded-full flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Pagamento 100% Seguro
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <i class="fa-solid fa-users text-5xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-3xl font-extrabold text-white mb-2">Acesso Família</h3>
+                        
+                        <!-- Comparação de Preço -->
+                        <div class="mb-4">
+                            <p class="text-lg text-slate-500 line-through">De R$ 1000,00</p>
+                            <p class="text-5xl font-extrabold text-white mb-2">Por R$ 369<span class="text-lg font-medium text-slate-400">,00</span></p>
+                            <span class="bg-green-500 text-white text-sm px-2 py-1 rounded">ECONOMIA DE R$ 150</span>
+                        </div>
+                        
+                        <p class="text-slate-400 font-medium mb-6">Taxa Única de Ativação</p>
+                    </div>
+
+                    <!-- Benefício "Sem Mensalidade" -->
+                    <div class="bg-indigo-500/10 border border-indigo-500/30 rounded p-3 mb-6">
+                        <p class="text-indigo-300 text-sm font-semibold text-center">
+                            <i class="fa-solid fa-star mr-1"></i>
+                            SEM mensalidades • SEM fidelidade • SEM pegadinhas
+                        </p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 text-slate-300">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-green-400 mt-1 mr-3"></i><span>Ative até <strong>4 contas Gympass</strong> para família ou amigos.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-green-400 mt-1 mr-3"></i><span>Quanto mais pessoas (até 4), <strong>menor o valor por conta</strong>: apenas R$ 92.25 por pessoa!</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-green-400 mt-1 mr-3"></i><span>Suporte premium para todos os membros.</span></li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-gift text-yellow-400 mt-1 mr-3"></i>
+                            <span><strong>BÔNUS:</strong> Plano Dentro do App sete dias gratis</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="text-center">
+                        <a href="https://pay.cakto.com.br/33bzfos" class="cta-button inline-block w-full text-center bg-indigo-600 text-white font-bold text-lg px-8 py-4 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline mr-2">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                            </svg>
+                            Garantir Acesso Família Agora
+                        </a>
+                        <p class="text-xs text-slate-500 mt-2 text-center">
+                            <i class="fa-solid fa-bolt mr-1"></i>
+                            Ativação em até 15 minutos
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Acesso Individual -->
+                <div class="plan-card p-8 pt-20 rounded-2xl">
+                    <!-- Selo de Segurança -->
+                    <div class="flex justify-center mb-4">
+                        <span class="bg-green-500/10 text-green-300 text-xs px-3 py-1 rounded-full flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Pagamento 100% Seguro
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <i class="fa-solid fa-user text-5xl text-indigo-400 mb-4"></i>
+                        <h3 class="text-3xl font-extrabold text-white mb-2">Acesso Individual</h3>
+                        
+                        <!-- Comparação de Preço -->
+                        <div class="mb-4">
+                            <p class="text-lg text-slate-500 line-through">De R$ 250,00</p>
+                            <p class="text-5xl font-extrabold text-white mb-2">Por R$ 150<span class="text-lg font-medium text-slate-400">,00</span></p>
+                            <span class="bg-green-500 text-white text-sm px-2 py-1 rounded">ECONOMIA DE R$ 100</span>
+                        </div>
+                        
+                        <p class="text-slate-400 font-medium mb-6">Taxa Única de Ativação</p>
+                    </div>
+
+                    <!-- Benefício "Sem Mensalidade" -->
+                    <div class="bg-indigo-500/10 border border-indigo-500/30 rounded p-3 mb-6">
+                        <p class="text-indigo-300 text-sm font-semibold text-center">
+                            <i class="fa-solid fa-star mr-1"></i>
+                            SEM mensalidades • SEM fidelidade • SEM pegadinhas
+                        </p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 text-slate-300">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-green-400 mt-1 mr-3"></i><span>Ative <strong>1 conta Gympass</strong> exclusiva para sua jornada.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-green-400 mt-1 mr-3"></i><span>Sua liberdade para treinar onde e quando quiser e fazer a atividade que quiser.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-green-400 mt-1 mr-3"></i><span>Suporte premium individual e dedicado.</span></li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-gift text-yellow-400 mt-1 mr-3"></i>
+                            <span><strong>BÔNUS:</strong> Plano Dentro do App sete dias gratis</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="text-center">
+                        <a href="https://pay.cakto.com.br/aiupime_535056" class="cta-button inline-block w-full text-center bg-indigo-600 text-white font-bold text-lg px-8 py-4 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline mr-2">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                            </svg>
+                            Garantir Acesso Individual Agora
+                        </a>
+                        <p class="text-xs text-slate-500 mt-2 text-center">
+                            <i class="fa-solid fa-bolt mr-1"></i>
+                            Ativação em até 15 minutos
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social -->
+    <div class="text-center py-8">
+        <p class="text-slate-400 text-sm">
+            + de <strong class="text-white">2.400 pessoas</strong> já ativaram seus acessos com sucesso
+        </p>
+    </div>
+
+    <!-- SEÇÃO GARANTIA (REFORÇO DE CONFIANÇA) -->
+    <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+             <i class="fa-solid fa-shield-halved text-5xl text-green-400 mb-6"></i>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Sua Garantia Blindada de 1 Ano</h2>
+            
+            <!-- Garantia Específica -->
+            <p class="text-lg text-slate-400 max-w-3xl mx-auto mb-8">
+                <strong class="text-white">GARANTIA TRIPLA:</strong><br>
+                <i class="fa-solid fa-check text-green-400 mr-2"></i> 7 dias para reembolso total<br>
+                <i class="fa-solid fa-check text-green-400 mr-2"></i> 1 ano de reativação gratuita<br>
+                <i class="fa-solid fa-check text-green-400 mr-2"></i> Suporte dedicado via WhatsApp
+            </p>
+            
+             <div class="inline-flex items-center gap-2 text-sm font-semibold bg-green-500/10 text-green-300 px-4 py-2 rounded-full">
+                <i class="fa-solid fa-lock"></i>
+                <span>Sua compra é 100% segura e garantida.</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SEÇÃO FAQ (QUEBRA DE OBJEÇÕES FINAIS) -->
+    <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Dúvidas de Última Hora?</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="p-6 rounded-lg bg-slate-800/50 border border-slate-700 group transition-colors hover:border-indigo-500">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg text-white">
+                        O pagamento é seguro mesmo?
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180 text-slate-400"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-400">Sim. Utilizamos a TrivexPay, um dos gateways de pagamento mais seguros do Brasil. Toda a transação ocorre em ambiente criptografado e seus dados financeiros nunca são armazenados por nós.</p>
+                </details>
+                
+                <details class="p-6 rounded-lg bg-slate-800/50 border border-slate-700 group transition-colors hover:border-indigo-500">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg text-white">
+                        Funciona mesmo em qualquer academia?
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180 text-slate-400"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-400">Sim! Funciona em mais de 15.000 academias parceiras do Gympass em todo o Brasil. Você consegue treinar em redes como Bio Ritmo, Bodytech e milhares de outras.</p>
+                </details>
+                
+                <details class="p-6 rounded-lg bg-slate-800/50 border border-slate-700 group transition-colors hover:border-indigo-500">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg text-white">
+                        Por que é mais barato que contratar direto?
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180 text-slate-400"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-400">Temos um acordo especial com empresas que nos permite oferecer ativações por um preço muito pequeno, graças à vinculação do seu EMAIL ao cadastro Gympass de uma de nossas empresas parceiras. É 100% legal e seguro - você recebe exatamente o mesmo acesso.</p>
+                </details>
+                
+                <details class="p-6 rounded-lg bg-slate-800/50 border border-slate-700 group transition-colors hover:border-indigo-500">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg text-white">
+                        E se eu tiver problemas com a ativação?
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180 text-slate-400"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-400">É por isso que nosso processo é guiado por um especialista humano via WhatsApp. Estamos com você em cada passo para garantir que tudo funcione perfeitamente. Se, por qualquer motivo, a ativação não for possível, você tem direito ao reembolso total em 7 dias.</p>
+                </details>
+
+                <details class="p-6 rounded-lg bg-slate-800/50 border border-slate-700 group transition-colors hover:border-indigo-500">
+                    <summary class="flex items-center justify-between cursor-pointer font-semibold text-lg text-white">
+                        Como vocês conseguem cadastrar pra CPF?
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300 group-open:rotate-180 text-slate-400"></i>
+                    </summary>
+                    <p class="mt-4 text-slate-400">Vinculamos seu E-mail em uma empresa parceira que já faz parte do Gympass, dessa forma, desbloqueamos o seu acesso. Dentro do app, você poderá assinar o plano desejado, e treinar fazendo checkin nas academias.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-16 text-center">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <h3 class="text-2xl font-bold text-white mb-4">
+                Pronto para Transformar Sua Rotina?
+            </h3>
+            <p class="text-slate-400 mb-6">
+                Milhares de academias te esperam. Seu acesso está a 1 clique de distância.
+            </p>
+            <a href="#acessos" class="cta-button bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-lg">
+                <i class="fa-solid fa-dumbbell mr-2"></i>
+                Escolher Meu Acesso Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 py-8">
+        <div class="container mx-auto px-6 text-center text-sm text-slate-500">
+            <p>© 2024 EconoGym. Todos os direitos reservados.</p>
+            <p class="mt-2">EconoGym é um serviço de intermediação independente e não possui afiliação direta com Gympass ou Wellhub.</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante Mobile -->
+    <div class="mobile-cta fixed bottom-4 left-4 right-4 z-50">
+        <a href="#acessos" class="block bg-indigo-600 text-white font-bold text-center py-4 rounded-lg shadow-xl">
+            <i class="fa-solid fa-dumbbell mr-2"></i>
+            Escolher Meu Acesso
+        </a>
+    </div>
+
+    <script>
+        // Script para animação de fade-in ao rolar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+
+</body></html>
